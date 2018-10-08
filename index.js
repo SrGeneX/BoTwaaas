@@ -57,7 +57,7 @@ client.on('message', (message) => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
    
        if(msg.startsWith(prefix + 'AVISO')){
-	    if(!message.member.roles.find("name", 'Teste')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
+	    if(!message.member.roles.find("name", 'Equipe')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
              msg.delete(10000)
 	    })
             let args1 = message.content.slice(prefix.length + 5).split(";");
@@ -81,7 +81,7 @@ client.on('guildMemberAdd', member => {
         .setThumbnail(avatar)
         .addField('Novo integrande da equipe!', `Seja bem vindo(a), ${member} à equipe do High.\n Agora você é oficialmente um de nós. `)
         .setFooter(`© HighMC`);
-        client.channels.get('497789408360267779').send(embed);
+        client.channels.get('496040178851250176').send(embed);
   })
 
   client.login(process.env.token);; 
