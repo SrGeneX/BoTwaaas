@@ -68,7 +68,7 @@ client.on('message', (message) => {
                 .addField('Atenciosamente,', message.author.username)
                 .setColor('RED')
     
-        client.channels.get('497789408360267779').send({embed});
+        client.channels.get('496033477490114580').send({embed});
         }
 
 }); 
