@@ -59,8 +59,9 @@ client.on('message', (message) => {
        if(msg.startsWith(prefix + 'AVISO')){
         
 	    if(!message.member.roles.find("name", 'Teste')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
-        })
-              let args1 = message.content.slice(prefix.length + 5).split(";");
+             msg.delete(10000)
+	    })
+            let args1 = message.content.slice(prefix.length + 5).split(";");
             let embed = new Discord.RichEmbed()
                 .setFooter(hoje)
                 .setTitle(`:loudspeaker: | HighMC - Anúncio`)
