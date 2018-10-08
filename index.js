@@ -63,10 +63,10 @@ client.on('message', (message) => {
               let args1 = message.content.slice(prefix.length + 5).split(";");
             let embed = new Discord.RichEmbed()
                 .setFooter(hoje)
-                .setTitle(`:loudspeaker: | GamersBoard - Anúncio`)
+                .setTitle(`:loudspeaker: | HighMC - Anúncio`)
                 .setDescription(args1[0])
                 .addField('Atenciosamente,', message.author.username)
-                .setColor('3498db')
+                .setColor('RED')
     
         client.channels.get('497789408360267779').send({embed});
         }
