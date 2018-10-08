@@ -82,7 +82,7 @@ client.on('guildMemberAdd', member => {
         .addField('Novo Membro!', `» Olá, ${member}. Seja bem vindo \n ao servidor de Discord da GamersBoard \n \n» Fórum:: https://gamersboard.com.br `)
         .setFooter(`© GamersBoard - 2018`);
         client.channels.get('497789408360267779').send(embed);
-	.addRole('Teste')
+	member.addRole('Teste')
   })
 
   client.login(process.env.token);; 
