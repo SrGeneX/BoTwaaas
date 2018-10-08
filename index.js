@@ -77,12 +77,11 @@ client.on('guildMemberAdd', member => {
     let avatar = member.user.avatarURL
   
     let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
+        .setColor('RED')
         .setThumbnail(avatar)
-        .addField('Novo Membro!', `» Olá, ${member}. Seja bem vindo \n ao servidor de Discord da GamersBoard \n \n» Fórum:: https://gamersboard.com.br `)
-        .setFooter(`© GamersBoard - 2018`);
+        .addField('Novo integrande da equipe!', `» Seja bem vindo(a), ${member} à equipe do High. Agora você é oficialmente um de nós. `)
+        .setFooter(`© HighMC`);
         client.channels.get('497789408360267779').send(embed);
-	member.addRole('Teste')
   })
 
   client.login(process.env.token);; 
