@@ -36,10 +36,10 @@ client.on("ready", () => {
     })
       
      
-    const activities = ['https://gamersboard.com.br/', 'https://gamersboard.com.br/']
+    const activities = [' ', ' ']
     let counter = 0
     setInterval(function() {
-        client.user.setGame(activities[counter], "https://twitch.tv/gamersboard")
+        client.user.setGame(activities[counter], "https://twitch.tv/ ")
         counter+= 1
         counter %= activities.length
     }, 10000)
@@ -68,7 +68,7 @@ client.on('message', (message) => {
                 .addField('Atenciosamente,', message.author.username)
                 .setColor('3498db')
     
-        client.channels.get('488098325552300035').send({embed});
+        client.channels.get('497789408360267779').send({embed});
         }
 
 }); 
@@ -81,8 +81,8 @@ client.on('guildMemberAdd', member => {
         .setThumbnail(avatar)
         .addField('Novo Membro!', `» Olá, ${member}. Seja bem vindo \n ao servidor de Discord da GamersBoard \n \n» Fórum:: https://gamersboard.com.br `)
         .setFooter(`© GamersBoard - 2018`);
-        client.channels.get('483377400550391811').send(embed);
-	member.addRole('Teste')
+        client.channels.get('497789408360267779').send(embed);
+	.addRole('Teste')
   })
 
   client.login(process.env.token);; 
