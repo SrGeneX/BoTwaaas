@@ -36,7 +36,7 @@ client.on("ready", () => {
     })
       
      
-    const activities = ['http://www.high-mc.net/', 'http://www.high-mc.net/']
+    const activities = ['www.high-mc.net/', 'www.high-mc.net']
     let counter = 0
     setInterval(function() {
         client.user.setGame(activities[counter], "https://twitch.tv/highmc")
