@@ -79,8 +79,8 @@ client.on('guildMemberAdd', member => {
     let embed = new Discord.RichEmbed()
         .setColor('RED')
         .setThumbnail(avatar)
-        .addField('Novo integrande da equipe!', `Seja bem vindo(a), ${member} à equipe do High.\n** Agora você é oficialmente um de nós. **`)
-        .setFooter(`*© HighMC*`);
+        .addField('Novo integrande da equipe!', `Seja bem vindo(a), ${member} à equipe do High.\n Agora você é oficialmente um de nós. `)
+        .setFooter(`© HighMC`);
         client.channels.get('497789408360267779').send(embed);
   })
 
