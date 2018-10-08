@@ -36,10 +36,10 @@ client.on("ready", () => {
     })
       
      
-    const activities = [' ', ' ']
+    const activities = ['http://www.high-mc.net/', 'http://www.high-mc.net/']
     let counter = 0
     setInterval(function() {
-        client.user.setGame(activities[counter], "https://twitch.tv/ ")
+        client.user.setGame(activities[counter], "https://twitch.tv/highmc")
         counter+= 1
         counter %= activities.length
     }, 10000)
@@ -58,7 +58,7 @@ client.on('message', (message) => {
    
        if(msg.startsWith(prefix + 'AVISO')){
         
-	    if(!message.member.roles.find("name", 'Moderadores')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
+	    if(!message.member.roles.find("name", 'Teste')) return message.channel.sendMessage(":x: | Você não possui permissão").then(msg => {
         })
               let args1 = message.content.slice(prefix.length + 5).split(";");
             let embed = new Discord.RichEmbed()
